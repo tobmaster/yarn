@@ -96,12 +96,12 @@ if (commandName === 'help' || commandName === '--help' || commandName === '-h') 
   }
 }
 
-// if no args or command name looks like a flag then default to `install`
+// if no args or command name looks like a flag then default to `add`
 if (!commandName || commandName[0] === '-') {
   if (commandName) {
     args.unshift(commandName);
   }
-  commandName = 'install';
+  commandName = 'add';
 }
 
 // aliases: i -> install
